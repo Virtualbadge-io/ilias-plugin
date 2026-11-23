@@ -1,0 +1,200 @@
+obj_xvbd#:#Virtualbadge.io
+objs_xvbd#:#Virtualbadge.io
+obj_xvbd_duplicate#:#Copy Virtualbadge.io
+objs_xvbd_duplicate#:#Copy Virtualbadge.io objects
+obj_xvbd_select#:#Select Virtualbadge.io
+xvbd_add#:#Add Virtualbadge.io
+xvbd_new#:#New Virtualbadge.io certificate or badge
+xvbd_read#:#See own certificate
+xvbd_write#:#Edit settings and manage certificates of all participants
+xvbd_delete#:#Delete Virtualbadge.io object
+xvbd_visible#:#Virtualbadge.io object is visible
+xvbd_edit_permission#:#Change permission settings
+xvbd_copy#:#Copy Virtualbadge.io object
+crs_create_xvbd#:#Create Virtualbadge.io
+grp_create_xvbd#:#Create Virtualbadge.io
+fold_create_xvbd#:#Create Virtualbadge.io
+tab_view#:#Certificate
+settings#:#Settings
+main_org#:#Main organisation
+section_api#:#Virtualbadge.io API
+section_api_info#:#API key and address of your Virtualbadge.io organisation. The API key is shown in the Virtualbadge.io admin panel under Account Settings, Integration.
+api_url#:#API address
+api_url_info#:#Address of the Virtualbadge.io API. Change only if requests are routed through a proxy.
+api_url_invalid#:#Enter an https address.
+api_key#:#API key
+api_key_info#:#API key of the main organisation. Stored encrypted and never shown again; leave the field empty to keep the stored key.
+api_key_org#:#API key: %s
+api_key_set#:#A key is stored.
+api_key_not_set#:#No key is stored yet.
+rate_limit#:#Calls per hour
+rate_limit_info#:#Maximum number of calls per hour the plugin sends to Virtualbadge.io with this API key. Use the limit agreed with Virtualbadge.io for your organisation. Further certificates wait and are sent automatically in the next hour. 0: no limit.
+rate_limit_org#:#Calls per hour: %s
+date_format#:#Date format
+date_format_info#:#Format of dates filled into template fields, such as the completion date or the course start.
+section_orgs#:#Further organisations
+section_orgs_info#:#Only needed if certificates are issued by several Virtualbadge.io organisations, for example sub-organisations with their own API key.
+orgs#:#Organisations
+orgs_info#:#One organisation per line: key|name (key: letters, digits, hyphen, underscore). After saving, fields for the API key and limit of each organisation appear below.
+orgs_invalid#:#Some lines have an invalid key. Use letters, digits, hyphen and underscore only.
+category_map#:#Categories
+category_map_info#:#One mapping per line: category = organisation key, the main organisation has the key main. The category is given by its ref id or import id. Courses use the mapping of their category or the nearest parent category, otherwise the main organisation. Tutors can only issue with the organisation of their course; ILIAS administrators can choose any organisation.
+category_map_invalid_line#:#Invalid line in the categories: %s
+category_map_unknown_org#:#Unknown organisation in the categories: %s
+settings_saved#:#The settings have been saved.
+settings_saved_check_fields#:#The settings have been saved. Check the mapping of the template fields below.
+form_invalid#:#Please check your input.
+test_connection#:#Test connection
+test_ok#:#%s: connection works, %d active templates.
+test_failed#:#%s: %s
+test_not_configured#:#%s: no API key is configured.
+status_overview#:#Certificates in the last 24 hours
+cron_process#:#Virtualbadge.io: issue certificates
+cron_process_info#:#Sends queued certificates and badges to Virtualbadge.io, retries temporary errors and checks certificates that are being created. Run it every minute.
+cron_verify#:#Virtualbadge.io: check issued certificates
+cron_verify_info#:#Checks issued certificates in Virtualbadge.io once a day each and takes over revoked, replaced or deleted certificates. Also checks certificates still being created after the regular status checks once a day.
+not_configured#:#The Virtualbadge.io API key is not configured. Please contact the ILIAS administrator.
+no_template#:#No certificate has been set up here yet.
+no_template_tutor#:#Choose a Virtualbadge.io template in the settings.
+your_certificate#:#Your certificate
+your_badge#:#Your badge
+issued_on#:#Issued on %s.
+open_certificate#:#Open certificate
+open_validation#:#Validation page
+in_progress_learner#:#Your certificate is being created. The link will appear here shortly.
+condition_completion#:#You receive the certificate when you have completed the course.
+condition_approval#:#You receive the certificate after completing the course, once a tutor has released it.
+condition_object#:#You receive the certificate when you have completed "%s".
+condition_object_percent#:#You receive the certificate when you reach at least %2$s %% in "%1$s".
+condition_manual#:#You receive the certificate after release by a tutor.
+condition_met_on#:#Condition met on %s
+template_unavailable#:#The template "%s" is no longer active in Virtualbadge.io. Certificates cannot be issued.
+template_changed#:#The template "%s" has fields that are not mapped here: %s. Certificates cannot be issued until the settings are updated.
+templates_unavailable#:#Templates could not be loaded: %s
+templates_refreshed#:#The templates have been reloaded.
+refresh_templates#:#Reload templates
+release_all_info#:#%d participants have completed the course and wait for release.
+release_all#:#Release all %d
+retroactive_info#:#%d participants already meet the condition but have no certificate yet.
+retroactive#:#Issue to %d participants
+participants#:#Participants
+col_name#:#Name
+col_status#:#Status
+col_condition#:#Condition
+col_issued#:#Issued
+col_error#:#Latest error
+action_release#:#Release
+action_retry#:#Retry issuing
+action_reissue#:#Issue again
+action_resend#:#Send email again
+release_done#:#%d certificates have been queued. They are sent within a few minutes.
+release_not_possible#:#Nothing was released. The participants may already have a certificate, not meet the condition yet, or cannot receive it.
+retry_done#:#Issuing is tried again.
+retry_not_possible#:#Issuing cannot be tried again.
+reissue_confirm#:#Issue a new certificate with the current data for %s? The current certificate becomes invalid in Virtualbadge.io. This uses one credit.
+reissue_done#:#A new certificate is being issued. The previous one becomes invalid.
+reissue_not_possible#:#This certificate cannot be issued again.
+resend_done#:#Virtualbadge.io sends the email with the certificate link again.
+resend_not_possible#:#The email cannot be sent again for this certificate.
+section_settings#:#Certificate or badge
+org#:#Organisation
+org_info#:#Virtualbadge.io organisation that issues the certificate. The organisation of the course category is used; other organisations only for ILIAS administrators.
+org_not_allowed#:#You cannot issue with this organisation.
+template#:#Template
+template_info#:#Template in Virtualbadge.io used for the certificate or badge.
+type_certificate#:#Certificate
+type_badge#:#Badge
+trigger#:#Issue on
+trigger_completion#:#Course completion
+trigger_completion_info#:#When the learning progress of the course is "completed".
+trigger_approval#:#Course completion, after release by a tutor
+trigger_approval_info#:#The status list shows who has completed the course; a tutor releases the certificate. The completion date is used.
+trigger_object#:#Completion of an object
+trigger_object_info#:#When a chosen object of the course is completed, for example the final test. Optionally with a minimum test result.
+trigger_object_select#:#Object
+trigger_object_select_info#:#Objects of this course with learning progress.
+trigger_manual#:#Manual release by a tutor
+trigger_manual_info#:#A tutor releases the certificate to any participant, without condition.
+min_percent#:#Minimum result (%)
+min_percent_info#:#Only for tests: the certificate is issued as soon as the scored test result reaches this percentage, even if the test is not passed. Leave empty to issue when the test is passed.
+min_percent_invalid#:#Enter a value greater than 0 and at most 100.
+send_email#:#Email from Virtualbadge.io
+send_email_info#:#Virtualbadge.io sends participants an email with the link to their certificate.
+completion_issued#:#Learning progress: completed when issued
+completion_issued_info#:#With the learning progress mode of this object, it is completed once the certificate has been issued. If the object is part of the course's learning progress and the trigger is course completion, the certificate is issued as soon as all other objects are completed.
+field_heading#:#Template field "%s"
+field_source#:#Value from
+field_source_info#:#Where the value for this field comes from.
+field_text#:#Fixed text
+field_text_info#:#Only for "Fixed text". Same for every participant and may contain placeholders: {firstname}, {lastname}, {fullname}, {email}, {login}, {course}, {coursestartdate}, {courseenddate}, {completiondate}, {grade}, {points}, {maxpoints}, and {coursefield:ID} for the custom metadata of the course (listed above the field mapping if the course has any).
+fields_none#:#The template has no text fields.
+fields_saved#:#The field mapping has been saved.
+coursefield_placeholders#:#Placeholders for fixed text from the custom metadata of this course:
+mapping_unavailable#:#These template fields use a source that is not available in this course, for example a custom metadata field whose record was deactivated: %s. No certificates are issued while a field is mapped to such a source; placeholders of such fields in fixed text stay empty. Please choose another source in the field mapping or change the fixed text.
+sourcegroup_text#:#Same for all
+sourcegroup_user#:#Participant
+sourcegroup_course#:#Course
+sourcegroup_coursefield#:#Course metadata
+sourcegroup_issue#:#Completion
+source_text#:#Fixed text
+source_user_firstname#:#First name
+source_user_lastname#:#Last name
+source_user_fullname#:#Full name (with academic title)
+source_user_title#:#Academic title
+source_user_email#:#Email
+source_user_login#:#Login
+source_user_matriculation#:#Matriculation number
+source_user_institution#:#Institution
+source_user_department#:#Department
+source_user_city#:#City
+source_user_country#:#Country
+source_course_title#:#Course title
+source_course_description#:#Course description
+source_course_category#:#Category
+source_course_startdate#:#Course start
+source_course_enddate#:#Course end
+source_issue_completiondate#:#Completion date
+source_issue_grade#:#Test result (%)
+source_issue_points#:#Test result (points)
+source_issue_maxpoints#:#Maximum points of the test
+status_none#:#Not issued
+status_queued#:#Queued
+status_pending#:#Being created
+status_issued#:#Issued
+status_revoked#:#Revoked
+status_deleted#:#Deleted in Virtualbadge.io
+status_retrying#:#Retrying
+status_failed#:#Error
+not_in_course#:#This object is not inside a course. Certificates are only issued to members of the course that contains the object.
+col_status_detail#:#Status detail
+learner_state_none#:#Not yet achieved
+learner_state_progress#:#Being issued
+learner_state_issued#:#Issued
+learner_state_problem#:#Needs attention
+learner_issued#:#Congratulations! Your certificate has been issued. Open it, download it or share it from the certificate page.
+learner_issued_badge#:#Congratulations! Your badge has been issued. Open it, download it or share it from the badge page.
+learner_problem_failed#:#Your certificate could not be issued yet. Please contact your tutor.
+learner_problem_revoked#:#Your certificate has been revoked by the issuer. Please contact your tutor if you have questions.
+learner_problem_deleted#:#Your certificate is no longer available. Please contact your tutor.
+prop_course#:#Course
+prop_certificate_id#:#Certificate ID
+open_badge#:#Open badge
+overview#:#Overview
+overview_issued_of#:#%1$d of %2$d participants have their certificate
+overview_problems#:#Needs attention
+overview_waiting_release#:#Waiting for release
+overview_condition_met#:#Condition met, not issued yet
+overview_not_yet#:#Not yet achieved
+msg_field_empty_user#:#Field "%s": %s is empty for this user.
+msg_field_empty_course#:#Field "%s": %s is empty in this course.
+msg_source_unavailable#:#Field "%s" uses a source that is not available.
+msg_gone#:#The object or the user no longer exists.
+msg_template_inactive#:#The template "%s" is no longer active in Virtualbadge.io.
+msg_fields_unmapped#:#The template "%s" has fields that are not mapped in this object: %s.
+msg_unchanged#:#Not issued again: the data has not changed since the last issue, the current certificate stays valid.
+msg_reissue_failed#:#Issuing again failed, the current certificate stays valid: %s
+msg_no_api_key#:#No API key is configured for this organisation.
+msg_api_key_rejected#:#Virtualbadge.io rejected the API key.
+msg_hourly_limit#:#Hourly limit of calls to Virtualbadge.io reached.
+msg_lock#:#Lock on the call counter not available.
+msg_generation_failed#:#Virtualbadge.io could not create the certificate. Check the template and the credits of the organisation in Virtualbadge.io, then retry.

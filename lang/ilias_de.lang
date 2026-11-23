@@ -1,0 +1,200 @@
+obj_xvbd#:#Virtualbadge.io
+objs_xvbd#:#Virtualbadge.io
+obj_xvbd_duplicate#:#Virtualbadge.io kopieren
+objs_xvbd_duplicate#:#Virtualbadge.io-Objekte kopieren
+obj_xvbd_select#:#Virtualbadge.io auswählen
+xvbd_add#:#Virtualbadge.io hinzufügen
+xvbd_new#:#Neues Virtualbadge.io-Zertifikat oder -Badge
+xvbd_read#:#Eigenes Zertifikat sehen
+xvbd_write#:#Einstellungen bearbeiten und Zertifikate aller Teilnehmenden verwalten
+xvbd_delete#:#Virtualbadge.io-Objekt löschen
+xvbd_visible#:#Virtualbadge.io-Objekt ist sichtbar
+xvbd_edit_permission#:#Rechteeinstellungen ändern
+xvbd_copy#:#Virtualbadge.io-Objekt kopieren
+crs_create_xvbd#:#Virtualbadge.io anlegen
+grp_create_xvbd#:#Virtualbadge.io anlegen
+fold_create_xvbd#:#Virtualbadge.io anlegen
+tab_view#:#Zertifikat
+settings#:#Einstellungen
+main_org#:#Hauptorganisation
+section_api#:#Virtualbadge.io-API
+section_api_info#:#API-Schlüssel und Adresse Ihrer Virtualbadge.io-Organisation. Den API-Schlüssel finden Sie im Virtualbadge.io-Adminbereich unter Account Settings, Integration.
+api_url#:#API-Adresse
+api_url_info#:#Adresse der Virtualbadge.io-API. Nur ändern, wenn Anfragen über einen Proxy laufen.
+api_url_invalid#:#Geben Sie eine https-Adresse ein.
+api_key#:#API-Schlüssel
+api_key_info#:#API-Schlüssel der Hauptorganisation. Wird verschlüsselt gespeichert und nie wieder angezeigt; lassen Sie das Feld leer, um den gespeicherten Schlüssel zu behalten.
+api_key_org#:#API-Schlüssel: %s
+api_key_set#:#Ein Schlüssel ist gespeichert.
+api_key_not_set#:#Noch kein Schlüssel gespeichert.
+rate_limit#:#Aufrufe pro Stunde
+rate_limit_info#:#Höchstzahl der Aufrufe pro Stunde, die das Plugin mit diesem API-Schlüssel an Virtualbadge.io sendet. Verwenden Sie das mit Virtualbadge.io für Ihre Organisation vereinbarte Limit. Weitere Zertifikate warten und werden in der nächsten Stunde automatisch gesendet. 0: kein Limit.
+rate_limit_org#:#Aufrufe pro Stunde: %s
+date_format#:#Datumsformat
+date_format_info#:#Format von Datumsangaben in Vorlagenfeldern, etwa Abschlussdatum oder Kursbeginn.
+section_orgs#:#Weitere Organisationen
+section_orgs_info#:#Nur nötig, wenn Zertifikate von mehreren Virtualbadge.io-Organisationen ausgestellt werden, etwa Unterorganisationen mit eigenem API-Schlüssel.
+orgs#:#Organisationen
+orgs_info#:#Eine Organisation pro Zeile: Schlüssel|Name (Schlüssel: Buchstaben, Ziffern, Bindestrich, Unterstrich). Nach dem Speichern erscheinen darunter Felder für API-Schlüssel und Limit jeder Organisation.
+orgs_invalid#:#Einige Zeilen haben einen ungültigen Schlüssel. Verwenden Sie nur Buchstaben, Ziffern, Bindestrich und Unterstrich.
+category_map#:#Kategorien
+category_map_info#:#Eine Zuordnung pro Zeile: Kategorie = Organisationsschlüssel, die Hauptorganisation hat den Schlüssel main. Die Kategorie wird über ihre Ref-ID oder Import-ID angegeben. Kurse verwenden die Zuordnung ihrer Kategorie oder der nächsten übergeordneten Kategorie, sonst die Hauptorganisation. Tutorinnen und Tutoren können nur mit der Organisation ihres Kurses ausstellen; ILIAS-Administratoren können jede Organisation wählen.
+category_map_invalid_line#:#Ungültige Zeile bei den Kategorien: %s
+category_map_unknown_org#:#Unbekannte Organisation bei den Kategorien: %s
+settings_saved#:#Die Einstellungen wurden gespeichert.
+settings_saved_check_fields#:#Die Einstellungen wurden gespeichert. Prüfen Sie unten die Zuordnung der Vorlagenfelder.
+form_invalid#:#Bitte prüfen Sie Ihre Eingaben.
+test_connection#:#Verbindung testen
+test_ok#:#%s: Verbindung funktioniert, %d aktive Vorlagen.
+test_failed#:#%s: %s
+test_not_configured#:#%s: Kein API-Schlüssel konfiguriert.
+status_overview#:#Zertifikate der letzten 24 Stunden
+cron_process#:#Virtualbadge.io: Zertifikate ausstellen
+cron_process_info#:#Sendet wartende Zertifikate und Badges an Virtualbadge.io, wiederholt vorübergehende Fehler und prüft Zertifikate, die gerade erstellt werden. Jede Minute ausführen.
+cron_verify#:#Virtualbadge.io: ausgestellte Zertifikate prüfen
+cron_verify_info#:#Prüft jedes ausgestellte Zertifikat einmal täglich in Virtualbadge.io und übernimmt widerrufene, ersetzte oder gelöschte Zertifikate. Prüft außerdem einmal täglich Zertifikate, die nach den regulären Statusabfragen noch erstellt werden.
+not_configured#:#Der Virtualbadge.io-API-Schlüssel ist nicht konfiguriert. Bitte wenden Sie sich an die ILIAS-Administration.
+no_template#:#Hier wurde noch kein Zertifikat eingerichtet.
+no_template_tutor#:#Wählen Sie in den Einstellungen eine Virtualbadge.io-Vorlage.
+your_certificate#:#Ihr Zertifikat
+your_badge#:#Ihr Badge
+issued_on#:#Ausgestellt am %s.
+open_certificate#:#Zertifikat öffnen
+open_validation#:#Validierungsseite
+in_progress_learner#:#Ihr Zertifikat wird erstellt. Der Link erscheint hier in Kürze.
+condition_completion#:#Sie erhalten das Zertifikat, wenn Sie den Kurs abgeschlossen haben.
+condition_approval#:#Sie erhalten das Zertifikat nach Abschluss des Kurses, sobald es von einer Tutorin oder einem Tutor freigegeben wurde.
+condition_object#:#Sie erhalten das Zertifikat, wenn Sie „%s“ abgeschlossen haben.
+condition_object_percent#:#Sie erhalten das Zertifikat, wenn Sie in „%1$s“ mindestens %2$s %% erreichen.
+condition_manual#:#Sie erhalten das Zertifikat nach Freigabe durch eine Tutorin oder einen Tutor.
+condition_met_on#:#Bedingung erfüllt am %s
+template_unavailable#:#Die Vorlage „%s“ ist in Virtualbadge.io nicht mehr aktiv. Es können keine Zertifikate ausgestellt werden.
+template_changed#:#Die Vorlage „%s“ hat Felder, die hier nicht zugeordnet sind: %s. Bis die Einstellungen angepasst sind, können keine Zertifikate ausgestellt werden.
+templates_unavailable#:#Die Vorlagen konnten nicht geladen werden: %s
+templates_refreshed#:#Die Vorlagen wurden neu geladen.
+refresh_templates#:#Vorlagen neu laden
+release_all_info#:#%d Teilnehmende haben den Kurs abgeschlossen und warten auf die Freigabe.
+release_all#:#Alle %d freigeben
+retroactive_info#:#%d Teilnehmende erfüllen die Bedingung bereits, haben aber noch kein Zertifikat.
+retroactive#:#An %d Teilnehmende ausstellen
+participants#:#Teilnehmende
+col_name#:#Name
+col_status#:#Status
+col_condition#:#Bedingung
+col_issued#:#Ausgestellt
+col_error#:#Letzter Fehler
+action_release#:#Freigeben
+action_retry#:#Erneut versuchen
+action_reissue#:#Neu ausstellen
+action_resend#:#E-Mail erneut senden
+release_done#:#%d Zertifikate wurden eingeplant. Sie werden innerhalb weniger Minuten gesendet.
+release_not_possible#:#Es wurde nichts freigegeben. Die Teilnehmenden haben möglicherweise schon ein Zertifikat, erfüllen die Bedingung noch nicht oder können es nicht erhalten.
+retry_done#:#Die Ausstellung wird erneut versucht.
+retry_not_possible#:#Die Ausstellung kann nicht erneut versucht werden.
+reissue_confirm#:#Ein neues Zertifikat mit den aktuellen Daten für %s ausstellen? Das bisherige Zertifikat wird in Virtualbadge.io ungültig. Dafür wird ein Credit verbraucht.
+reissue_done#:#Ein neues Zertifikat wird ausgestellt. Das bisherige wird ungültig.
+reissue_not_possible#:#Dieses Zertifikat kann nicht neu ausgestellt werden.
+resend_done#:#Virtualbadge.io sendet die E-Mail mit dem Zertifikatslink erneut.
+resend_not_possible#:#Für dieses Zertifikat kann die E-Mail nicht erneut gesendet werden.
+section_settings#:#Zertifikat oder Badge
+org#:#Organisation
+org_info#:#Virtualbadge.io-Organisation, die das Zertifikat ausstellt. Verwendet wird die Organisation der Kurskategorie; andere Organisationen nur für ILIAS-Administratoren.
+org_not_allowed#:#Mit dieser Organisation können Sie nicht ausstellen.
+template#:#Vorlage
+template_info#:#Vorlage in Virtualbadge.io, die für das Zertifikat oder Badge verwendet wird.
+type_certificate#:#Zertifikat
+type_badge#:#Badge
+trigger#:#Ausstellen bei
+trigger_completion#:#Kursabschluss
+trigger_completion_info#:#Wenn der Lernfortschritt des Kurses „abgeschlossen“ ist.
+trigger_approval#:#Kursabschluss, nach Freigabe durch Tutor/in
+trigger_approval_info#:#Die Statusliste zeigt, wer den Kurs abgeschlossen hat; eine Tutorin oder ein Tutor gibt das Zertifikat frei. Verwendet wird das Abschlussdatum.
+trigger_object#:#Abschluss eines Objekts
+trigger_object_info#:#Wenn ein gewähltes Objekt des Kurses abgeschlossen ist, zum Beispiel der Abschlusstest. Optional mit Mindestergebnis im Test.
+trigger_object_select#:#Objekt
+trigger_object_select_info#:#Objekte dieses Kurses mit Lernfortschritt.
+trigger_manual#:#Manuelle Freigabe durch Tutor/in
+trigger_manual_info#:#Eine Tutorin oder ein Tutor gibt das Zertifikat beliebigen Teilnehmenden frei, ohne Bedingung.
+min_percent#:#Mindestergebnis (%)
+min_percent_info#:#Nur für Tests: Das Zertifikat wird ausgestellt, sobald das gewertete Testergebnis diesen Prozentwert erreicht, auch wenn der Test nicht bestanden ist. Leer lassen, um bei bestandenem Test auszustellen.
+min_percent_invalid#:#Geben Sie einen Wert größer als 0 und höchstens 100 ein.
+send_email#:#E-Mail von Virtualbadge.io
+send_email_info#:#Virtualbadge.io sendet den Teilnehmenden eine E-Mail mit dem Link zu ihrem Zertifikat.
+completion_issued#:#Lernfortschritt: abgeschlossen bei Ausstellung
+completion_issued_info#:#Mit dem Lernfortschrittsmodus dieses Objekts ist es abgeschlossen, sobald das Zertifikat ausgestellt ist. Ist das Objekt Teil des Lernfortschritts des Kurses und der Auslöser der Kursabschluss, wird das Zertifikat ausgestellt, sobald alle anderen Objekte abgeschlossen sind.
+field_heading#:#Vorlagenfeld „%s“
+field_source#:#Wert aus
+field_source_info#:#Woher der Wert für dieses Feld kommt.
+field_text#:#Fester Text
+field_text_info#:#Nur für „Fester Text“. Für alle Teilnehmenden gleich; Platzhalter möglich: {firstname}, {lastname}, {fullname}, {email}, {login}, {course}, {coursestartdate}, {courseenddate}, {completiondate}, {grade}, {points}, {maxpoints} sowie {coursefield:ID} für die erweiterten Metadaten des Kurses (über der Feldzuordnung aufgeführt, falls der Kurs welche hat).
+fields_none#:#Die Vorlage hat keine Textfelder.
+fields_saved#:#Die Feldzuordnung wurde gespeichert.
+coursefield_placeholders#:#Platzhalter für festen Text aus den erweiterten Metadaten dieses Kurses:
+mapping_unavailable#:#Diese Vorlagenfelder verwenden eine Quelle, die in diesem Kurs nicht verfügbar ist, z. B. ein Feld der erweiterten Metadaten, dessen Metadatensatz deaktiviert wurde: %s. Solange ein Feld einer solchen Quelle zugeordnet ist, werden keine Zertifikate ausgestellt; Platzhalter solcher Felder in festem Text bleiben leer. Bitte wählen Sie in der Feldzuordnung eine andere Quelle oder ändern Sie den festen Text.
+sourcegroup_text#:#Für alle gleich
+sourcegroup_user#:#Teilnehmende/r
+sourcegroup_course#:#Kurs
+sourcegroup_coursefield#:#Kursmetadaten
+sourcegroup_issue#:#Abschluss
+source_text#:#Fester Text
+source_user_firstname#:#Vorname
+source_user_lastname#:#Nachname
+source_user_fullname#:#Vollständiger Name (mit akademischem Titel)
+source_user_title#:#Akademischer Titel
+source_user_email#:#E-Mail
+source_user_login#:#Benutzername
+source_user_matriculation#:#Matrikelnummer
+source_user_institution#:#Institution
+source_user_department#:#Abteilung
+source_user_city#:#Ort
+source_user_country#:#Land
+source_course_title#:#Kurstitel
+source_course_description#:#Kursbeschreibung
+source_course_category#:#Kategorie
+source_course_startdate#:#Kursbeginn
+source_course_enddate#:#Kursende
+source_issue_completiondate#:#Abschlussdatum
+source_issue_grade#:#Testergebnis (%)
+source_issue_points#:#Testergebnis (Punkte)
+source_issue_maxpoints#:#Maximale Punkte des Tests
+status_none#:#Nicht ausgestellt
+status_queued#:#Wartet
+status_pending#:#Wird erstellt
+status_issued#:#Ausgestellt
+status_revoked#:#Widerrufen
+status_deleted#:#In Virtualbadge.io gelöscht
+status_retrying#:#Wird wiederholt
+status_failed#:#Fehler
+not_in_course#:#Dieses Objekt liegt nicht in einem Kurs. Zertifikate erhalten nur Mitglieder des Kurses, in dem das Objekt liegt.
+col_status_detail#:#Statusdetail
+learner_state_none#:#Noch nicht erreicht
+learner_state_progress#:#Wird ausgestellt
+learner_state_issued#:#Ausgestellt
+learner_state_problem#:#Klärung nötig
+learner_issued#:#Herzlichen Glückwunsch! Ihr Zertifikat wurde ausgestellt. Auf der Zertifikatsseite können Sie es ansehen, herunterladen oder teilen.
+learner_issued_badge#:#Herzlichen Glückwunsch! Ihr Badge wurde ausgestellt. Auf der Badge-Seite können Sie es ansehen, herunterladen oder teilen.
+learner_problem_failed#:#Ihr Zertifikat konnte noch nicht ausgestellt werden. Bitte wenden Sie sich an Ihre Tutorin oder Ihren Tutor.
+learner_problem_revoked#:#Ihr Zertifikat wurde vom Aussteller widerrufen. Bei Fragen wenden Sie sich an Ihre Tutorin oder Ihren Tutor.
+learner_problem_deleted#:#Ihr Zertifikat ist nicht mehr verfügbar. Bitte wenden Sie sich an Ihre Tutorin oder Ihren Tutor.
+prop_course#:#Kurs
+prop_certificate_id#:#Zertifikats-ID
+open_badge#:#Badge öffnen
+overview#:#Übersicht
+overview_issued_of#:#%1$d von %2$d Teilnehmenden haben ihr Zertifikat
+overview_problems#:#Klärung nötig
+overview_waiting_release#:#Warten auf Freigabe
+overview_condition_met#:#Bedingung erfüllt, noch nicht ausgestellt
+overview_not_yet#:#Noch nicht erreicht
+msg_field_empty_user#:#Feld „%s“: %s ist für diese Person leer.
+msg_field_empty_course#:#Feld „%s“: %s ist in diesem Kurs leer.
+msg_source_unavailable#:#Feld „%s“ verwendet eine Quelle, die nicht verfügbar ist.
+msg_gone#:#Das Objekt oder die Person existiert nicht mehr.
+msg_template_inactive#:#Die Vorlage „%s“ ist in Virtualbadge.io nicht mehr aktiv.
+msg_fields_unmapped#:#Die Vorlage „%s“ hat Felder, die in diesem Objekt nicht zugeordnet sind: %s.
+msg_unchanged#:#Nicht erneut ausgestellt: Die Daten haben sich seit der letzten Ausstellung nicht geändert, das aktuelle Zertifikat bleibt gültig.
+msg_reissue_failed#:#Erneutes Ausstellen fehlgeschlagen, das aktuelle Zertifikat bleibt gültig: %s
+msg_no_api_key#:#Für diese Organisation ist kein API-Schlüssel eingerichtet.
+msg_api_key_rejected#:#Virtualbadge.io hat den API-Schlüssel abgelehnt.
+msg_hourly_limit#:#Stündliches Limit der Aufrufe an Virtualbadge.io erreicht.
+msg_lock#:#Sperre auf dem Aufrufzähler nicht verfügbar.
+msg_generation_failed#:#Virtualbadge.io konnte das Zertifikat nicht erstellen. Prüfen Sie die Vorlage und das Guthaben der Organisation in Virtualbadge.io und versuchen Sie es dann erneut.

@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 320" width="320" height="320">
+  <title>Virtualbadge.io</title>
+  <circle cx="160" cy="130" r="92" fill="none" stroke="#4c6586" stroke-width="20"/>
+  <path d="M110 128l34 34 66-66" fill="none" stroke="#4c6586" stroke-width="20" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M104 206l-24 94 50-22 30 40 20-92M216 206l24 94-50-22-30 40" fill="none" stroke="#4c6586" stroke-width="20" stroke-linejoin="round"/>
+</svg>
