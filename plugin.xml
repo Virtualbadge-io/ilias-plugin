@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+    Events this plugin listens to. ILIAS reads this file during setup
+    (ilEventHandlingBuildEventInfoObjective) and calls ilVirtualbadgePlugin::handleEvent().
+    Run "php cli/setup.php build" or "composer dump-autoload" in the ILIAS root after changes.
+-->
+<plugin id="xvbd">
+    <events>
+        <event type="listen" id="components/ILIAS/Tracking" />
+        <!-- ILIAS 10 and 11 still raise deleteUser under the old component name. -->
+        <event type="listen" id="Services/User" />
+        <event type="listen" id="components/ILIAS/User" />
+    </events>
+</plugin>

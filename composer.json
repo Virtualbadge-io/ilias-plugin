@@ -1,0 +1,40 @@
+{
+    "name": "virtualbadge-io/ilias-virtualbadge",
+    "description": "Virtualbadge.io repository object plugin for ILIAS: issue digital certificates and badges on course completion.",
+    "type": "project",
+    "license": "GPL-3.0-or-later",
+    "authors": [
+        {
+            "name": "FutureNext GmbH (Virtualbadge.io)",
+            "email": "support@virtualbadge.io",
+            "homepage": "https://www.virtualbadge.io"
+        }
+    ],
+    "require": {
+        "php": ">=8.2 <8.4",
+        "ext-curl": "*",
+        "ext-json": "*",
+        "ext-mbstring": "*",
+        "ext-sodium": "*"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "^10.5"
+    },
+    "autoload": {
+        "psr-4": {
+            "Virtualbadge\\Core\\": "src/Core/",
+            "Virtualbadge\\Ilias\\": "src/Ilias/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Virtualbadge\\Tests\\": "tests/"
+        }
+    },
+    "config": {
+        "sort-packages": true
+    },
+    "scripts": {
+        "test": "phpunit"
+    }
+}
