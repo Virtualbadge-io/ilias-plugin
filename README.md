@@ -4,8 +4,11 @@ Issue digital certificates and badges with [Virtualbadge.io](https://www.virtual
 
 Tutors add a **Virtualbadge.io** object to a course, choose a certificate or badge template of their Virtualbadge.io organisation and map the template fields to user, course and completion data. When a learner meets the condition, the plugin sends the certificate to Virtualbadge.io in the background and shows the learner the link to the certificate and its validation page.
 
+Virtualbadge.io issues certificates and badges as Open Badges and W3C Verifiable Credentials, and for the EU Digital Identity Wallet (EUDI Wallet) as SD-JWT VC and mdoc. Learners can add them to the EUDI Wallet or save them to the wallet app on their smartphone.
+
 - Plugin ID: `xvbd` (repository object plugin)
 - Source code and releases: `https://github.com/Virtualbadge-io/ilias-plugin`
+- Guides for administrators and tutors: [Wiki](https://github.com/Virtualbadge-io/ilias-plugin/wiki)
 - Bug tracker: `https://github.com/Virtualbadge-io/ilias-plugin/issues`
 - License: GPL-3.0-or-later, see [LICENSE](LICENSE)
 
@@ -26,7 +29,7 @@ Tutors add a **Virtualbadge.io** object to a course, choose a certificate or bad
 
 ## Requirements
 
-- A Virtualbadge.io account (commercial service) and its API key. The plugin itself is free.
+- A Virtualbadge.io account with API access and its API key. Virtualbadge.io is an external, paid service for issuing and validating digital certificates and badges; templates, issuing, links and validation pages come from Virtualbadge.io. The plugin itself is free. The API key is shown in the Virtualbadge.io admin panel under Account Settings, Integration.
 - ILIAS and PHP, see the table below. PHP extensions `curl`, `sodium`, `mbstring`, `json` (all required by ILIAS anyway).
 - The ILIAS cron job must run (`php cli/cron.php run-jobs <user> <client_id>`), ideally every minute.
 
